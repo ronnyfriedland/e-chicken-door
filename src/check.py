@@ -39,7 +39,7 @@ try:
           print("open")
           write_state("open")
           # open door
-          create_cron("e-chicken-door-job", "/usr/local/bin/python /usr/src/app/door.py --duration {duration} --pin {pin}".format(duration = 5, pin = 6), start=now)
+          create_cron("e-chicken-door-job", "/usr/local/bin/python /usr/src/app/door.py --duration {duration} --pin {pin}".format(duration = 5, pin = 22), start=now)
       else:
         if config["verbose"] is True:
           print("door already open")
@@ -50,7 +50,7 @@ try:
           print("close")
           write_state("closed")
           # close door
-          create_cron("e-chicken-door-job", "/usr/local/bin/python /usr/src/app/door.py --duration {duration} --pin {pin}".format(duration = 5, pin = 26), start=now)
+          create_cron("e-chicken-door-job", "/usr/local/bin/python /usr/src/app/door.py --duration {duration} --pin {pin}".format(duration = 5, pin = 4), start=now)
       else:
         if config["verbose"] is True:
           print("door already closed")
