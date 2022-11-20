@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/kerstinli/e-chicken-door.git', branch: 'main'])
+        git([url: 'https://github.com/ronnyfriedland/e-chicken-door.git', branch: 'main'])
 
       }
     }
